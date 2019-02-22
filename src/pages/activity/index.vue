@@ -155,31 +155,6 @@ export default {
         {
           title: '状态',
           key: ''
-          // render: (h, params) => {
-          //   const item = params.row;
-          //   const { status } = item;
-          //   return h(
-          //     'div',
-          //     {
-          //       style: {
-          //         display: 'flex',
-          //         'flex-direction': 'column'
-          //       }
-          //     },
-          //     [
-          //       h('span', {
-          //         style: {
-          //           marginTop: '8px'
-          //         }
-          //       }, `${statusMap[status] || ''}`)
-          //       // h('span', {
-          //       //   style: {
-          //       //     marginTop: '8px'
-          //       //   }
-          //       // }, `原价：${originalAmount || ''}`)
-          //     ],
-          //   );
-          // }
         },
         {
           type: 'operator',

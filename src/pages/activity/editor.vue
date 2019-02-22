@@ -56,7 +56,7 @@
         <Row>
           <Col span="11">
             <FormItem label="报名时间" required>
-              <date-range-wrapper
+              <date-range-picker-wrapper
                 :end.sync="formDatas.productActivityExtDto.endTime"
                 :start.sync="formDatas.productActivityExtDto.startTime"
               />

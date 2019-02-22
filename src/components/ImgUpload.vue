@@ -119,8 +119,8 @@ export default {
       return `${this.$config.OSS_URL}/${dfsId}`;
     },
     handleView(item) {
-      console.log(item);
       const { url } = item;
+      console.log(url);
       this.$imagePreview.show([url]);
     },
     handleRemove(file) {

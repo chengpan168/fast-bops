@@ -37,8 +37,8 @@ export default {
         this.$viewer.show();
       }
     },
-    show(imgs, index = 0) {
-      logger.debug('image preview', imgs = [], index);
+    show(imgs = [], index = 0) {
+      logger.debug('image preview', imgs, index);
       this.imgs = imgs;
       this.$nextTick(() => {
         this.$viewer.view(index);
