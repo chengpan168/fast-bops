@@ -1,21 +1,23 @@
 <template>
-    <div class="layout">
+  <div class="layout">
+    <Layout>
+      <nav-bar/>
+      <Layout>
+        <Sider :style="{background: '#fff'}" collapsible hide-trigger>
+          <side-bar/>
+        </Sider>
         <Layout>
-            <nav-bar />
-            <Layout>
-                <Sider hide-trigger :style="{background: '#fff'}">
-                    <side-bar />
-                </Sider>
-                <app-main />
-            </Layout>
+          <app-main/>
         </Layout>
-    </div>
+      </Layout>
+    </Layout>
+  </div>
 </template>
 
 <script>
 
-import { Sider, Layout } from 'iview';
-import { AppMain, SideBar, NavBar } from './components';
+import { Layout, Sider } from 'iview';
+import { AppMain, NavBar, SideBar } from './components';
 
 export default {
   name: 'layout',
@@ -26,9 +28,9 @@ export default {
 </script>
 
 <style lang="less" scoped>
-    .layout {
-        position: relative;
-        height: 100%;
-        width: 100%;
-    }
+  .layout {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
 </style>
